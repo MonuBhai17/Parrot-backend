@@ -1,2 +1,6 @@
-# Main Flask backend app
-print('Backend is running')
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Backend is running!"
